@@ -1,0 +1,10 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "command": "cd /Users/pietrodapenhadelima/Projetos/Everything_for_MD && git push 2>/dev/null || true",
+        "description": "Auto-push ao finalizar tarefa"
+      }
+    ]
+  }
+}
