@@ -1,0 +1,74 @@
+# Everything for MD — Setup do Projeto
+
+=======================================
+## macOS (Terminal)
+=======================================
+
+# 1. Clonar o repositório
+git clone https://github.com/pietrovinicius/Everything_for_MD.git
+cd Everything_for_MD
+
+# 2. Criar ambiente virtual
+python3 -m venv venv
+
+# 3. Ativar ambiente virtual
+source venv/bin/activate
+
+# 4. Instalar dependências
+pip install -r requirements.txt
+
+# 5. Rodar o aplicativo
+python -m src.app
+
+# 6. Rodar testes
+pytest
+
+# 7. Lint e type check
+ruff check .
+mypy src/
+
+# 8. Desativar ambiente virtual (quando terminar)
+deactivate
+
+
+=======================================
+## Windows (PowerShell)
+=======================================
+
+# 1. Clonar o repositório
+git clone https://github.com/pietrovinicius/Everything_for_MD.git
+cd Everything_for_MD
+
+# 2. Criar ambiente virtual
+python -m venv venv
+
+# 3. Ativar ambiente virtual
+.\venv\Scripts\Activate.ps1
+
+# Nota: se der erro de política de execução, rode antes:
+# Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+# 4. Instalar dependências
+pip install -r requirements.txt
+
+# 5. Rodar o aplicativo
+python -m src.app
+
+# 6. Rodar testes
+pytest
+
+# 7. Lint e type check
+ruff check .
+mypy src/
+
+# 8. Desativar ambiente virtual (quando terminar)
+deactivate
+
+
+=======================================
+## Requisitos
+=======================================
+
+- Python 3.12 ou superior
+- Git
+- Conexão com internet (para instalar dependências via pip)
