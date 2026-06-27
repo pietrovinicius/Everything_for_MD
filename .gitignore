@@ -1,3 +1,12 @@
+# App output
+output/*.md
+
+# PyInstaller
+build/
+dist/
+*.spec
+!everything_for_md.spec
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
