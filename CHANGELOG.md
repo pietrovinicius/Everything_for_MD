@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.3] - 2026-06-28
+### Adicionado
+- README.md com visão geral, pipeline, instalação, uso e padrões de desenvolvimento.
+### Corrigido
+- `.claude/settings.json`: hook Stop migrado para o schema `hooks` array (corrige erro do /doctor).
+
 ## [0.1.2] - 2026-06-27
 ### Adicionado
 - MEMORY.md com memória completa do projeto.
